@@ -6,4 +6,8 @@ export const Container = styled.button`
   background-color: transparent;
   border: none;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem
 `;
