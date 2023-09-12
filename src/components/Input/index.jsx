@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { Container } from './styles';
 
-export function Input({ icon: Icon, ...rest }) {
+export function Input({ icon: Icon, className, ...rest }) {
   return(
     <Container>
       
       {Icon && <Icon size={20} />}
-      <input {...rest} />
+      <input {...rest} className={className}/>
 
     </Container>
   )
@@ -14,4 +14,5 @@ export function Input({ icon: Icon, ...rest }) {
 
 Input.propTypes = {
   icon: PropTypes.string,
+  className: PropTypes.string
 };

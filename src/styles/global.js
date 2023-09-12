@@ -8,7 +8,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
     color: ${({ theme }) => theme.COLORS.WHITE};
 
     -webkit-font-smoothing: antialiased;
@@ -31,5 +31,22 @@ export default createGlobalStyle`
 
   button:hover, a:hover {
     filter: brightness(0.9);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    border-radius: 5px; /* Raio das bordas do thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
   }
 `;
