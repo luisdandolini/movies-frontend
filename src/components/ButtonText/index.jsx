@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { Container } from './styles';
 
-export function ButtonText({ text, icon: Icon }) {
+export function ButtonText({ text, icon: Icon, className }) {
   return(
-    <Container>
+    <Container className={className}>
       {Icon && <Icon size={20} />}
       { text }
     </Container>
@@ -13,4 +13,5 @@ export function ButtonText({ text, icon: Icon }) {
 ButtonText.propTypes = {
   text: PropTypes.string,
   icon: PropTypes.string,
+  className: PropTypes.string,
 };
